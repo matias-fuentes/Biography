@@ -1,5 +1,3 @@
-# Webpage: https://matias-fuentes.netlify.app/
-
 [Homepage](https://cs50.harvard.edu/college/2020/fall/psets/8/homepage/#homepage)
 =================================================================================
 
