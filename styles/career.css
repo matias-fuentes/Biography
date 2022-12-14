@@ -10,6 +10,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 6.4rem;
+    padding: 2rem;
+    border-radius: 8px;
 }
 
 .careers > * {
@@ -23,7 +25,7 @@
 }
 
 .paragraph {
-    opacity: 0.75;
+    text-align: justify;
 }
 
 .center {
@@ -158,7 +160,15 @@
     display: block;
 }
 
+.career-title {
+    margin-bottom: 6.4rem;
+}
+
 @media screen and (min-width: 1024px) {
+    .careers {
+        padding: 4rem;
+    }
+
     .career img {
         width: 42%;
     }
@@ -224,5 +234,13 @@
 
     .margin-8 {
         margin: 0.8rem;
+    }
+
+    .subtitle-container {
+        margin-bottom: 1.6rem;
+    }
+
+    .description-container > h2 {
+        margin-bottom: 1.6rem;
     }
 }
