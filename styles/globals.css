@@ -1,3 +1,17 @@
+#test1 {
+    padding: 1rem 2rem;
+    color: white;
+    background-color: #0078d7;
+    font-size: 2rem;
+    font-family: Helvetica;
+}
+
+#test1:hover {
+    cursor: pointer;
+    background-color: blue;
+    transition: all 0.25s;
+}
+
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -8,18 +22,29 @@ section {
     position: relative;
 }
 
-h1, h2, h3, h4, p, a, span, li {
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+span,
+li {
     font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
     font-style: normal;
     font-variant: normal;
     margin: 0;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-weight: bold;
 }
 
-p, a, span, li {
+p,
+a,
+span,
+li {
     font-size: 3.2rem;
     font-weight: 400;
     line-height: 4.8rem;
@@ -44,12 +69,12 @@ h3 {
     font-weight: 400;
 }
 
-img {
-    object-fit: contain;
-}
-
 a {
     font-size: 2.4rem;
+}
+
+img {
+    object-fit: contain;
 }
 
 hr {
@@ -62,14 +87,26 @@ li {
     position: relative;
 }
 
+b {
+    color: rgb(31, 31, 31);
+}
+
+.dark-card {
+    background-color: #0d0d0d !important;
+}
+
 .anchor {
     position: absolute;
     top: -90px;
 }
 
+.layout {
+    margin: 0rem 5.75vw 3.2rem 5.75vw;
+}
+
 .characteristics {
     flex-basis: 100%;
-    margin: 2.4rem 0rem;
+    margin: 2.4rem 0rem 0rem 0rem;
     padding: 3.2rem;
     display: flex;
     flex-direction: column;
@@ -91,6 +128,13 @@ li {
     margin-bottom: 3.2rem;
 }
 
+.subtitle-container {
+    margin-bottom: 3.2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 @media screen and (min-width: 1024px) {
     h1 {
         font-size: 3.2rem;
@@ -108,19 +152,15 @@ li {
         line-height: 3.2rem;
     }
 
-    p, span, li {
+    p,
+    span,
+    li {
         font-size: 1.6rem;
         line-height: 2.4rem;
     }
 
     li {
         padding: 2.4rem 6.4rem;
-    }
-
-    .subtitle-container {
-        margin-bottom: 0rem;
-        display: flex;
-        justify-content: center;
     }
 
     .characteristics {
