@@ -31,6 +31,10 @@
     width: 60rem;
 }
 
+.footer__contact-container > div {
+    height: 4rem;
+}
+
 .footer__copyright-text {
     text-align: center;
 }
@@ -62,6 +66,7 @@
     color: rgb(200, 200, 200) !important;
     text-decoration: none;
     font-size: 3.2rem;
+    line-height: 4rem;
 }
 
 .footer__email:hover {

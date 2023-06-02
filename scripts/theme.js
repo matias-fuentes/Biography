@@ -39,6 +39,7 @@ const cypressSVG = document.getElementById('cypress-svg');
 const cucumberSVG = document.getElementById('cucumber-svg');
 const githubSVG = document.getElementById('github-svg');
 const linkedInSVG = document.getElementById('linkedin-svg');
+const youtubeSVG = document.getElementById('youtube-svg');
 
 // Check if the current theme of the user matches with the dark mode or not
 let prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
@@ -59,7 +60,7 @@ function invert() {
 function theme() {
     if (isDarkMode) {
         // Globals
-        body.style.backgroundColor = '#1a1a1a';
+        body.style.backgroundColor = 'rgb(36, 36, 36)';
         body.style.color = 'white';
         titlesAndSpan.forEach(elem => {
             elem.style.color = 'white';
@@ -104,6 +105,7 @@ function theme() {
         footer.classList.toggle('dark-card');
         githubSVG.src = './images/footer/github.svg';
         linkedInSVG.src = './images/footer/linkedin.svg';
+        youtubeSVG.src = './images/footer/youtube.svg';
     } else {
         // Global
         body.style.backgroundColor = 'white';
@@ -154,6 +156,7 @@ function theme() {
         footer.classList.toggle('dark-card');
         githubSVG.src = './images/footer/github-black.svg';
         linkedInSVG.src = './images/footer/linkedin-black.svg';
+        youtubeSVG.src = './images/footer/youtube-black.svg';
     }
 }
 
