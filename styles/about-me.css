@@ -1,5 +1,77 @@
+.gallery {
+    height: auto;
+    padding-top: 90px;
+    box-sizing: border-box;
+    margin: 0rem;
+}
+
+.blurred-background {
+    width: 100%;
+    height: 66.6vh;
+    position: absolute;
+    margin-top: 2px;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    transition: all 0.5s;
+    display: none;
+}
+
+.carousel-container {
+    height: auto;
+    position: relative;
+    margin: 7rem 0rem 6.4rem 0rem;
+    display: flex;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.images-carousel-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.images-carousel-container > img {
+    width: 100%;
+}
+
+.arrow-properties {
+    width: 97px;
+    height: 195px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background-color: #4f4f4f66;
+}
+
+.arrow-properties:hover {
+    transition: all 0.25s;
+    transform: translateY(-50%) scale(1.25);
+    cursor: pointer;
+}
+
+.arrow-left {
+    left: 3%;
+}
+
+.arrow-right {
+    right: 3%;
+}
+
 .about-me {
     margin-top: 0;
+}
+
+.about-me-description {
+    display: block;
+    text-align: justify;
+}
+
+.about-me-desc-bText {
+    color: rgb(224, 224, 224);
 }
 
 .about-me-container {
@@ -8,7 +80,7 @@
 }
 
 .about-me-margin > * {
-    margin-bottom: 6.4rem;
+    margin-bottom: 4.8rem;
 }
 
 .about-me-margin > div {
@@ -22,12 +94,13 @@
 }
 
 .title-margin {
-    margin-bottom: 12.8rem;
+    margin-bottom: 6.4rem;
 }
 
 .presentation {
     opacity: 0.75;
     font-style: italic;
+    text-align: justify;
 }
 
 .hyperlink {
@@ -73,8 +146,30 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .about-me-margin > * {
+    .gallery {
         margin-bottom: 3.2rem;
+    }
+
+    .blurred-background {
+        display: block;
+    }
+
+    .carousel-container {
+        margin: 0.2rem 0rem 3.2rem 0rem;
+        height: 66.6vh;
+    }
+
+    .images-carousel-container {
+        margin-bottom: 0;
+    }
+
+    .images-carousel-container > img {
+        height: 100%;
+        width: auto;
+    }
+
+    .about-me-margin > * {
+        margin-bottom: 2.4rem;
     }
 
     .about-me-user {
@@ -83,7 +178,7 @@
     }
 
     .title-margin {
-        margin-bottom: 6.4rem;
+        margin-bottom: 3.2rem;
     }
 
     .presentation {
