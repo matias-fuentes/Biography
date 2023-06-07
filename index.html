@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./styles/career.css" />
     <link rel="stylesheet" href="./styles/technologies.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/projects.css" />
     <link rel="icon" href="./images/header/logo.svg" />
 
     <title>Matías Fuentes</title>
@@ -32,13 +33,15 @@
             <div class="presentation-photo-container">
               <img class="presentation-photo" src="./images/presentation-photo.webp" alt="Presentation photo" />
             </div>
-            <div>
-              <h2>Name:</h2>
-              <h2 class="personal-information">Matías Fuentes</h2>
-            </div>
-            <div>
-              <h2>Birth:</h2>
-              <h2 class="personal-information">18th December, 2002</h2>
+            <div class="personal-data-container">
+              <div>
+                <h2>Name:</h2>
+                <h2 class="personal-information">Matías Fuentes</h2>
+              </div>
+              <div>
+                <h2>Birth:</h2>
+                <h2 class="personal-information">18th December, 2002</h2>
+              </div>
             </div>
           </div>
 
@@ -56,6 +59,7 @@
             <a href="#about-me">About Me</a>
             <a href="#career">Career</a>
             <a href="#technologies">Technologies</a>
+            <a href="#projects">Projects</a>
           </div>
         </div>
         <div class="transparent-div"></div>
@@ -72,6 +76,7 @@
             <a href="#about-me">About Me</a>
             <a href="#technologies">Technologies</a>
             <a href="#career">Career</a>
+            <a href="#projects">Projects</a>
           </nav>
           <div class="icon-container">
             <img id="dark-mode" alt="Dark mode" />
@@ -80,22 +85,24 @@
       </div>
     </header>
 
-    <section class="gallery">
+    <div class="gallery">
       <!-- .anchor's styles are stored in globals -->
       <div id="about-me" class="anchor"></div>
       <div class="blurred-background"></div>
-      <div class="carousel-container">
+      <div class="carousel-container" id="about-me-carousel">
         <input
           class="arrow-properties arrow-left"
           type="image"
           src="./images/gallery/left-arrow.svg"
           alt="Arrow left"
+          id="about-me-arrow-left"
         />
         <input
           class="arrow-properties arrow-right"
           type="image"
           src="./images/gallery/right-arrow.svg"
           alt="Arrow right"
+          id="about-me-arrow-right"
         />
         <div class="images-carousel-container">
           <img alt="Photo 10" />
@@ -129,7 +136,7 @@
         </div>
       </div>
 
-      <div class="layout">
+      <section id="about-me" class="layout">
         <div class="about-me-container">
           <div class="about-me-margin">
             <img class="about-me-user" src="./images/about-me/user.svg" alt="User icon" />
@@ -237,10 +244,10 @@
             </p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <section>
+    <section id="technologies">
       <!-- .anchor & .text-center's styles are stored in globals -->
       <div id="technologies" class="anchor"></div>
       <div class="text-center">
@@ -505,7 +512,7 @@
       </div>
     </section>
 
-    <section class="career">
+    <section id="career" class="career">
       <!-- .anchor & .text-center's styles are stored in globals -->
       <div id="career" class="anchor"></div>
       <div class="text-center career-title">
@@ -830,6 +837,78 @@
               <div>
                 <h3>Not graduated (4/5 years done)</h3>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <!-- .anchor & .text-center's styles are stored in globals -->
+      <div id="projects" class="anchor"></div>
+      <div class="text-center career-title">
+        <h1>Projects</h1>
+      </div>
+      <div class="carousel-container projects-carousel">
+        <input
+          class="arrow-properties arrow-left"
+          type="image"
+          src="./images/gallery/left-arrow.svg"
+          alt="Arrow left"
+          id="projects-arrow-left"
+        />
+        <input
+          class="arrow-properties arrow-right"
+          type="image"
+          src="./images/gallery/right-arrow.svg"
+          alt="Arrow right"
+          id="projects-arrow-right"
+        />
+        <div class="images-carousel-container">
+          <img src="./images/projects/refokuschallenge.webp" />
+          <div>
+            <div>
+              <h3>RefokusChallenge</h3>
+              <p>The ultimate Pokédex</p>
+              <a class="project-btn button-container project" href="https://refokuschallenge.vercel.app/">
+                <h2>Visit</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="images-carousel-container">
+          <img src="./images/projects/wikifood.webp" />
+          <div>
+            <div>
+              <h3>WikiFood</h3>
+              <p>All about your favourite foods, in just one place.</p>
+              <a class="project-btn button-container project" href="https://cs50-wikifood.vercel.app/">
+                <h2>Visit</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="images-carousel-container">
+          <img src="./images/projects/nexteventer.webp" />
+          <div>
+            <div>
+              <h3>NextEventer</h3>
+              <p>Your next event is just a click away.</p>
+              <a class="project-btn button-container project" href="https://nexteventer.vercel.app/">
+                <h2>Visit</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="images-carousel-container">
+          <img src="./images/projects/google-clone.webp" />
+          <div>
+            <div>
+              <h3>Google Clone</h3>
+              <p>Google Clone - The search engine that feels like home</p>
+              <a class="project-btn button-container project" href="https://cs50-googleclone.netlify.app/">
+                <h2>Visit</h2>
+              </a>
             </div>
           </div>
         </div>
