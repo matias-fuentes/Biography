@@ -23,8 +23,14 @@ const technologyBtnTexts = document.querySelectorAll('.button-container > h2');
 const careers = document.querySelectorAll('.careers');
 const careerCharacteristics = document.querySelectorAll('.characteristics-container > .characteristics');
 
+// Elements > Projects
+const projectTitles = document.querySelectorAll('.projects-carousel > .images-carousel-container > div > div > h3');
+const projectSlogans = document.querySelectorAll('.projects-carousel > .images-carousel-container > div > div > p');
+
 // Elements > Footer
 const footer = document.querySelector('.footer');
+const footerEmail = document.querySelector('.footer__email');
+const currentYear = document.getElementById('current-year');
 
 /* SVG's that changes its src property based on the current selected theme mode.
 
@@ -108,6 +114,8 @@ function theme() {
     githubSVG.src = './images/footer/github.svg';
     linkedInSVG.src = './images/footer/linkedin.svg';
     youtubeSVG.src = './images/footer/youtube.svg';
+    footerEmail.style.color = 'rgb(200, 200, 200)';
+    currentYear.style.color = 'rgb(200, 200, 200)';
   } else {
     // Global
     body.style.backgroundColor = 'white';
@@ -155,11 +163,23 @@ function theme() {
       characteristic.style.backgroundColor = '#f0f0f0';
     });
 
+    // Projects
+    projectTitles.forEach(title => {
+      title.style.color = 'white';
+    });
+    projectSlogans.forEach(slogan => {
+      slogan.style.color = 'white';
+    });
+
     // Footer
     footer.classList.toggle('dark-card');
     githubSVG.src = './images/footer/github-black.svg';
     linkedInSVG.src = './images/footer/linkedin-black.svg';
     youtubeSVG.src = './images/footer/youtube-black.svg';
+    footerEmail.style.color = 'rgb(56, 56, 56)';
+    currentYear.style.color = 'rgb(56, 56, 56)';
+
+    console.log('hola???');
   }
 }
 
