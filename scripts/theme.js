@@ -34,6 +34,7 @@ nextSVG.src = './images/technologies/nextjs-black.svg';
 However, if theme is dark:
 nextSVG.src = './images/technologies/nextjs.svg'; */
 const nextSVG = document.getElementById('next-svg');
+const expressSVG = document.getElementById('express-svg');
 const flaskSVG = document.getElementById('flask-svg');
 const cypressSVG = document.getElementById('cypress-svg');
 const cucumberSVG = document.getElementById('cucumber-svg');
@@ -47,117 +48,119 @@ let isDarkMode = prefersColorScheme.matches;
 
 // Invert the theme mode
 function invert() {
-    if (isDarkMode) {
-        isDarkMode = false;
-    } else {
-        isDarkMode = true;
-    }
+  if (isDarkMode) {
+    isDarkMode = false;
+  } else {
+    isDarkMode = true;
+  }
 
-    theme();
+  theme();
 }
 
 // Apply styles based on the currently selected theme mode
 function theme() {
-    if (isDarkMode) {
-        // Globals
-        body.style.backgroundColor = 'rgb(36, 36, 36)';
-        body.style.color = 'white';
-        titlesAndSpan.forEach(elem => {
-            elem.style.color = 'white';
-        });
-        paragraphAndAnchors.forEach(elem => {
-            elem.style.color = 'rgb(200, 200, 200)';
-        });
+  if (isDarkMode) {
+    // Globals
+    body.style.backgroundColor = 'rgb(36, 36, 36)';
+    body.style.color = 'white';
+    titlesAndSpan.forEach(elem => {
+      elem.style.color = 'white';
+    });
+    paragraphAndAnchors.forEach(elem => {
+      elem.style.color = 'rgb(200, 200, 200)';
+    });
 
-        // Header & favicon
-        headerContainer.style.backgroundColor = '#0d0d0d';
-        headerContainer.style.boxShadow = '1px 1px 1px #b3b3b366';
-        dropdownDiv.style.backgroundColor = 'black';
-        modeMenu.src = './images/header/dark-menu.svg';
-        modeButton.src = './images/header/dark-button-white.svg';
-        nextSVG.src = './images/technologies/nextjs.svg';
-        flaskSVG.src = './images/technologies/flask.svg';
-        cypressSVG.src = './images/technologies/cypress.svg';
-        cucumberSVG.src = './images/technologies/cucumber.svg';
+    // Header & favicon
+    headerContainer.style.backgroundColor = '#0d0d0d';
+    headerContainer.style.boxShadow = '1px 1px 1px #b3b3b366';
+    dropdownDiv.style.backgroundColor = 'black';
+    modeMenu.src = './images/header/dark-menu.svg';
+    modeButton.src = './images/header/dark-button-white.svg';
+    nextSVG.src = './images/technologies/nextjs.svg';
+    expressSVG.src = './images/technologies/express.svg';
+    flaskSVG.src = './images/technologies/flask.svg';
+    cypressSVG.src = './images/technologies/cypress.svg';
+    cucumberSVG.src = './images/technologies/cucumber.svg';
 
-        // About Me
-        characteristics.forEach(characteristic => {
-            characteristic.style.backgroundColor = 'black';
-        });
-        boldTexts.forEach(bText => {
-            bText.classList.toggle('about-me-desc-bText');
-        });
+    // About Me
+    characteristics.forEach(characteristic => {
+      characteristic.style.backgroundColor = 'black';
+    });
+    boldTexts.forEach(bText => {
+      bText.classList.toggle('about-me-desc-bText');
+    });
 
-        // Technologies
-        technologyContainer.forEach(container => {
-            container.style.backgroundColor = 'black';
-        });
+    // Technologies
+    technologyContainer.forEach(container => {
+      container.style.backgroundColor = 'black';
+    });
 
-        // Career
-        careers.forEach(career => {
-            career.style.backgroundColor = 'black';
-        });
-        careerCharacteristics.forEach(characteristic => {
-            characteristic.style.backgroundColor = '#161616';
-        });
+    // Career
+    careers.forEach(career => {
+      career.style.backgroundColor = 'black';
+    });
+    careerCharacteristics.forEach(characteristic => {
+      characteristic.style.backgroundColor = '#161616';
+    });
 
-        // Footer
-        footer.classList.toggle('dark-card');
-        githubSVG.src = './images/footer/github.svg';
-        linkedInSVG.src = './images/footer/linkedin.svg';
-        youtubeSVG.src = './images/footer/youtube.svg';
-    } else {
-        // Global
-        body.style.backgroundColor = 'white';
-        body.style.color = 'black';
-        titlesAndSpan.forEach(elem => {
-            elem.style.color = 'black';
-        });
-        paragraphAndAnchors.forEach(elem => {
-            elem.style.color = 'rgb(56, 56, 56)';
-        });
+    // Footer
+    footer.classList.toggle('dark-card');
+    githubSVG.src = './images/footer/github.svg';
+    linkedInSVG.src = './images/footer/linkedin.svg';
+    youtubeSVG.src = './images/footer/youtube.svg';
+  } else {
+    // Global
+    body.style.backgroundColor = 'white';
+    body.style.color = 'black';
+    titlesAndSpan.forEach(elem => {
+      elem.style.color = 'black';
+    });
+    paragraphAndAnchors.forEach(elem => {
+      elem.style.color = 'rgb(56, 56, 56)';
+    });
 
-        // Header & favicon
-        headerContainer.style.backgroundColor = '#e0e0e0';
-        headerContainer.style.boxShadow = '1px 1px 1px #4c4c4c66';
-        dropdownDiv.style.backgroundColor = '#e0e0e0';
-        modeMenu.src = './images/header/light-menu.svg';
-        modeButton.src = './images/header/dark-button-black.svg';
-        nextSVG.src = './images/technologies/nextjs-black.svg';
-        flaskSVG.src = './images/technologies/flask-black.svg';
-        cypressSVG.src = './images/technologies/cypress-black.svg';
-        cucumberSVG.src = './images/technologies/cucumber-black.svg';
+    // Header & favicon
+    headerContainer.style.backgroundColor = '#e0e0e0';
+    headerContainer.style.boxShadow = '1px 1px 1px #4c4c4c66';
+    dropdownDiv.style.backgroundColor = '#e0e0e0';
+    modeMenu.src = './images/header/light-menu.svg';
+    modeButton.src = './images/header/dark-button-black.svg';
+    nextSVG.src = './images/technologies/nextjs-black.svg';
+    expressSVG.src = './images/technologies/express-black.svg';
+    flaskSVG.src = './images/technologies/flask-black.svg';
+    cypressSVG.src = './images/technologies/cypress-black.svg';
+    cucumberSVG.src = './images/technologies/cucumber-black.svg';
 
-        // About Me
-        characteristics.forEach(characteristic => {
-            characteristic.style.backgroundColor = '#e0e0e0';
-        });
-        boldTexts.forEach(bText => {
-            bText.classList.toggle('about-me-desc-bText');
-        });
+    // About Me
+    characteristics.forEach(characteristic => {
+      characteristic.style.backgroundColor = '#e0e0e0';
+    });
+    boldTexts.forEach(bText => {
+      bText.classList.toggle('about-me-desc-bText');
+    });
 
-        // Technologies
-        technologyContainer.forEach(container => {
-            container.style.backgroundColor = '#e0e0e0';
-        });
-        technologyBtnTexts.forEach(btnText => {
-            btnText.style.color = 'white';
-        });
+    // Technologies
+    technologyContainer.forEach(container => {
+      container.style.backgroundColor = '#e0e0e0';
+    });
+    technologyBtnTexts.forEach(btnText => {
+      btnText.style.color = 'white';
+    });
 
-        // Career
-        careers.forEach(career => {
-            career.style.backgroundColor = '#e0e0e0';
-        });
-        careerCharacteristics.forEach(characteristic => {
-            characteristic.style.backgroundColor = '#f0f0f0';
-        });
+    // Career
+    careers.forEach(career => {
+      career.style.backgroundColor = '#e0e0e0';
+    });
+    careerCharacteristics.forEach(characteristic => {
+      characteristic.style.backgroundColor = '#f0f0f0';
+    });
 
-        // Footer
-        footer.classList.toggle('dark-card');
-        githubSVG.src = './images/footer/github-black.svg';
-        linkedInSVG.src = './images/footer/linkedin-black.svg';
-        youtubeSVG.src = './images/footer/youtube-black.svg';
-    }
+    // Footer
+    footer.classList.toggle('dark-card');
+    githubSVG.src = './images/footer/github-black.svg';
+    linkedInSVG.src = './images/footer/linkedin-black.svg';
+    youtubeSVG.src = './images/footer/youtube-black.svg';
+  }
 }
 
 /* If there's a change in the prefersColorScheme object, or if the user clicks either the dark mode or the switch
@@ -177,18 +180,18 @@ changed isDarkMode value.
 So, either we click the switch button normally or programatically, the process it's essentially the same (except
 for the first step only). */
 modeButton.addEventListener('click', () => {
-    slider.click();
+  slider.click();
 });
 
 switchButton.addEventListener('click', e => {
-    if (e.target === slider) {
-        invert();
-    }
+  if (e.target === slider) {
+    invert();
+  }
 });
 
 // Sets the initial state of the switch button.
 if (isDarkMode) {
-    switchButton.click();
+  switchButton.click();
 }
 
 theme();
