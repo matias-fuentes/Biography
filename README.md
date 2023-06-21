@@ -1,7 +1,12 @@
-[Biography](https://cs50.harvard.edu/college/2020/fall/psets/8/homepage/#homepage)
-=================================================================================
+[Project set 8: Homepage](https://cs50.harvard.edu/college/2020/fall/psets/8/homepage/#homepage)
 
 Build a simple homepage using HTML, CSS, and JavaScript.
+
+WEBSITE: https://matiasfuentes.netlify.app
+
+## Description
+
+Step into my world with Biography, a personal website where I share my journey, soft skills, and expertise in web development technologies. Explore my profile, certifications, and a comprehensive list of projects that I've worked on, showcasing my creativity, problem-solving abilities, and commitment to delivering exceptional results. Biography offers a glimpse into my professional growth and showcases my passion for web development and the exciting projects I've contributed to.
 
 ## Background
 
