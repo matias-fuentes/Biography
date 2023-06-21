@@ -8,6 +8,8 @@ WEBPAGE: https://matiasfuentes.netlify.app
 
 Step into my world with Biography, a personal website where I share my journey, soft skills, and expertise in web development technologies. Explore my profile, certifications, and a comprehensive list of projects that I've worked on, showcasing my creativity, problem-solving abilities, and commitment to delivering exceptional results. Biography offers a glimpse into my professional growth and showcases my passion for web development and the exciting projects I've contributed to.
 
+![Biography preview](https://github.com/matias-fuentes/Biography/assets/70669575/67a899ff-e1ec-4581-9aef-e3e402d12574)
+
 ## Background
 
 The internet has enabled incredible things: we can use a search engine to research anything imaginable, communicate with friends and family members around the globe, play games, take courses, and so much more. But it turns out that nearly all pages we may visit are built on three core languages, each of which serves a slightly different purpose:
