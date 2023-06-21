@@ -1,4 +1,4 @@
-[Project set 8: Homepage](https://cs50.harvard.edu/college/2020/fall/psets/8/homepage/#homepage)
+# [Project set 8: Homepage](https://cs50.harvard.edu/college/2020/fall/psets/8/homepage/#homepage)
 
 Build a simple homepage using HTML, CSS, and JavaScript.
 
