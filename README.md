@@ -2,7 +2,7 @@
 
 Build a simple homepage using HTML, CSS, and JavaScript.
 
-WEBSITE: https://matiasfuentes.netlify.app
+WEBPAGE: https://matiasfuentes.netlify.app
 
 ## Description
 
