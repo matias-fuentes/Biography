@@ -9,25 +9,21 @@ const observer = new IntersectionObserver(entries => {
                 hyperlinks[0].classList.toggle('actual-section', entry.isIntersecting);
                 dropdownHyperlinks[0].classList.toggle('actual-section', entry.isIntersecting);
                 break;
-            case 'work-experience':
+            case 'technologies':
                 hyperlinks[1].classList.toggle('actual-section', entry.isIntersecting);
                 dropdownHyperlinks[1].classList.toggle('actual-section', entry.isIntersecting);
                 break;
-            case 'technologies':
+            case 'career':
                 hyperlinks[2].classList.toggle('actual-section', entry.isIntersecting);
                 dropdownHyperlinks[2].classList.toggle('actual-section', entry.isIntersecting);
                 break;
-            case 'career':
+            case 'projects':
                 hyperlinks[3].classList.toggle('actual-section', entry.isIntersecting);
                 dropdownHyperlinks[3].classList.toggle('actual-section', entry.isIntersecting);
                 break;
-            case 'projects':
+            case 'it-skills':
                 hyperlinks[4].classList.toggle('actual-section', entry.isIntersecting);
                 dropdownHyperlinks[4].classList.toggle('actual-section', entry.isIntersecting);
-                break;
-            case 'it-skills':
-                hyperlinks[5].classList.toggle('actual-section', entry.isIntersecting);
-                dropdownHyperlinks[5].classList.toggle('actual-section', entry.isIntersecting);
                 break;
         }
     });
