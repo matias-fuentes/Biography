@@ -69,7 +69,7 @@ function invert() {
 function theme() {
     if (isDarkMode) {
         // Globals
-        body.style.backgroundColor = 'rgb(36, 36, 36)';
+        body.style.backgroundColor = 'black';
         body.style.color = 'white';
         titlesAndSpan.forEach(elem => {
             elem.style.color = 'white';
@@ -79,8 +79,8 @@ function theme() {
         });
 
         // Header & favicon
-        headerContainer.style.backgroundColor = '#0d0d0d';
-        headerContainer.style.boxShadow = '1px 1px 1px #b3b3b366';
+        headerContainer.style.backgroundColor = 'black';
+        headerContainer.style.borderBottom = '1px solid #333333';
         dropdownDiv.style.backgroundColor = 'black';
 
         modeMenu.src = './images/header/dark-menu.svg';
@@ -94,7 +94,7 @@ function theme() {
 
         // About Me
         characteristics.forEach(characteristic => {
-            characteristic.style.backgroundColor = 'black';
+            characteristic.style.backgroundColor = 'rgb(36, 36, 36)';
         });
         boldTexts.forEach(bText => {
             bText.classList.toggle('about-me-desc-bText');
@@ -102,12 +102,12 @@ function theme() {
 
         // Technologies
         technologyContainer.forEach(container => {
-            container.style.backgroundColor = 'black';
+            container.style.backgroundColor = 'rgb(36, 36, 36)';
         });
 
         // Career
         careers.forEach(career => {
-            career.style.backgroundColor = 'black';
+            career.style.backgroundColor = 'rgb(36, 36, 36)';
         });
         careerCharacteristics.forEach(characteristic => {
             characteristic.style.backgroundColor = '#161616';
@@ -132,9 +132,9 @@ function theme() {
         });
 
         // Header & favicon
-        headerContainer.style.backgroundColor = '#e0e0e0';
-        headerContainer.style.boxShadow = '1px 1px 1px #4c4c4c66';
-        dropdownDiv.style.backgroundColor = '#e0e0e0';
+        headerContainer.style.backgroundColor = 'white';
+        headerContainer.style.borderBottom = '1px solid #cccccc';
+        dropdownDiv.style.backgroundColor = 'white';
 
         modeMenu.src = './images/header/light-menu.svg';
         modeButton.src = './images/header/dark-button-black.svg';
